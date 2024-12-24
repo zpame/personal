@@ -1,5 +1,4 @@
 // JavaScript for Scavenger Hunt Website
-displaySuccessMessage();
 document.getElementById("submitBtn").addEventListener("click", function() {
     // Get values from the input boxes
     const entryBox1 = document.getElementById("entryBox1").value.trim();
