@@ -47,5 +47,5 @@ function displaySuccessMessage() {
         messageDiv.style.fontSize = "60px";
         document.body.appendChild(messageDiv);
     }
-    messageDiv.textContent = "Steam ($25) - Inside old PC inside Zack's room";
+    messageDiv.textContent = "S";
 }
