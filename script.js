@@ -1,29 +1,25 @@
-// JavaScript for Scavenger Hunt Website
+
 document.getElementById("submitBtn").addEventListener("click", function() {
-    // Get values from the input boxes
     const entryBox1 = document.getElementById("entryBox1").value.trim();
     const entryBox2 = document.getElementById("entryBox2").value.trim();
     const entryBox3 = document.getElementById("entryBox3").value.trim();
     const entryBox4 = document.getElementById("entryBox4").value.trim();
     const entryBox5 = document.getElementById("entryBox5").value.trim();
 
-    // Define correct codes
     const correctCodes = {
-        entryBox1: "APPLE", // Replace with the actual correct code
-        entryBox2: "4939576680741903", // Replace with the actual correct code
-        entryBox3: "ACE93MD2R34L", // Replace with the actual correct code
-        entryBox4: "PURPLE", // Replace with the actual correct code
-        entryBox5: "9389" // Replace with the actual correct code
+        entryBox1: "APPLE", 
+        entryBox2: "4939576680741903", 
+        entryBox3: "ACE93MD2R34L", 
+        entryBox4: "PURPLE", 
+        entryBox5: "9389" 
     };
 
-    // Check if each input matches the correct code
     const isBox1Correct = checkCode("entryBox1", entryBox1, correctCodes.entryBox1);
     const isBox2Correct = checkCode("entryBox2", entryBox2, correctCodes.entryBox2);
     const isBox3Correct = checkCode("entryBox3", entryBox3, correctCodes.entryBox3);
     const isBox4Correct = checkCode("entryBox4", entryBox4, correctCodes.entryBox4);
     const isBox5Correct = checkCode("entryBox5", entryBox5, correctCodes.entryBox5);
 
-    // If all codes are correct, display success message
     if (isBox1Correct && isBox2Correct && isBox3Correct && isBox4Correct && isBox5Correct) {
         displaySuccessMessage();
     }
