@@ -7,11 +7,11 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     const entryBox5 = document.getElementById("entryBox5").value.trim();
 
     const correctCodes = {
-        entryBox1: "APPLE", 
-        entryBox2: "4939576680741903", 
-        entryBox3: "ACE93MD2R34L", 
-        entryBox4: "PURPLE", 
-        entryBox5: "9389" 
+        entryBox1: "T1248EF", 
+        entryBox2: "SP1247", 
+        entryBox3: "T1248C", 
+        entryBox4: "NOPARKINGONSTREETSAFTER2SNOWFALLVIOLATORSWILLBETOWED", 
+        entryBox5: "2013K61D" 
     };
 
     const isBox1Correct = checkCode("entryBox1", entryBox1, correctCodes.entryBox1);
