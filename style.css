@@ -13,11 +13,14 @@ h1 {
 }
 
 h2 {
-    color: #555;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 20px;
 }
 
 #projects, #hobbies, #extras {
-    margin-left: 325px;
+    display: inline-block;
+    margin-left: 0 auto;
     margin-bottom: 50px;
     width: 50%;
     border-spacing: 100px;
@@ -26,6 +29,98 @@ h2 {
     border-radius: 25px;
     background-color: #ff7fa6;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+#BlockRunner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 65%;
+    border-spacing: 100px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    background-color: #fd8fb0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+#BlockRunnerList
+{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    font-size: 28px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 65%;
+}
+
+#Blockrunnerimg
+{
+    border-spacing: 25px;
+    padding: 5px;
+    border: 5px solid #000000;
+    border-radius: 200px;
+    background-color: #fd8fb0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);;
+}
+#Blockrunnerabout
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 65%;
+}
+
+#Isolation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 65%;
+    border-spacing: 100px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    background-color: #fd8fb0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+#IsolationList
+{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    font-size: 28px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 65%;
+}
+
+#backButton
+{
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    background-color: #fd8fb0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 #Projects
