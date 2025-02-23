@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #ffa0a0;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -14,152 +14,109 @@ h1 {
 
 h2 {
     color: #000000;
-    font-size: 50px;
-    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 #projects, #hobbies, #extras {
-    display: inline-block;
-    margin-left: 0 auto;
-    margin-bottom: 50px;
-    width: 50%;
-    border-spacing: 100px;
-    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
     border: 3px solid #000000;
     border-radius: 25px;
-    background-color: #ff7fa6;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
-}
-
-#BlockRunner
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 28px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 65%;
-    border-spacing: 100px;
-    padding: 5px;
-    border: 1px solid #000000;
-    border-radius: 25px;
-    background-color: #fd8fb0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-
-}
-#BlockRunnerList
-{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-    font-size: 28px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    width: 65%;
-}
-
-#Blockrunnerimg
-{
-    border-spacing: 25px;
-    padding: 5px;
-    border: 5px solid #000000;
-    border-radius: 200px;
-    background-color: #fd8fb0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);;
-}
-#Blockrunnerabout
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 28px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 65%;
-}
-
-#Isolation
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 28px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 65%;
-    border-spacing: 100px;
-    padding: 5px;
-    border: 1px solid #000000;
-    border-radius: 25px;
-    background-color: #fd8fb0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-
-}
-#IsolationList
-{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-    font-size: 28px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    width: 65%;
-}
-
-#backButton
-{
-    font-size: 50px;
-    display: inline-block;
-    margin-left: 0 auto;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    background-color: #fd8fb0;
+    background-color: #ffffff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-#Projects
-{
+#Projects {
+    width: 90%;
+    max-width: 800px;
     margin: 12px auto;
-    width: 75%;
-    padding: 150px;
+    padding: 50px;
     border: 5px solid #000000;
     border-radius: 25px;
-    background-color: #ff7fa6;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 #main {
+    width: 90%;
+    max-width: 400px;
     margin: 20px auto;
-    width: 25%;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #Img1 img {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 10%;
+    max-width: 100%;
+    width: 120px;
     display: block;
+    margin: 0 auto;
     border-radius: 50%;
-    border-color: #ff0073;
-    border-style: solid;
+    border: 3px solid #000000;
 }
 
 input[type="text"] {
     display: block;
-    width: 80%;
+    width: 90%;
+    max-width: 300px;
     margin: 10px auto;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 16px;
+}
+
+#backButton
+{
+    position: bottom;
+    width: 150px; 
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #projects, #hobbies, #extras, #Projects, #main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+      
+    ul li::before {
+        content: "•";
+        color: black;
+        font-size: 1.2em;
+    }
 }
