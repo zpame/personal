@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import SeniorPic from '@/assets/seniorpic2.jpg'
+import SeniorPic from '@/assets/seniorpic1.jpg'
+import '../../style.css'
+
 </script>
 
 <template>
-  <div id = "Img1">
+  <div class="Img1">
     <img :src="SeniorPic" alt="Profile Picture">
     </div>
     <h1>Zachary Pamer</h1>
