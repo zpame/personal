@@ -10,10 +10,10 @@ import '../../style.css'
     <img :src="SeniorPic" alt="Profile Picture">
     </div>
     <h1>Zachary Pamer</h1>
-    <div id="projects">
+    <div class="MainButton">
         <h1><a href="projects.html">Projects</a></h1>
     </div>
-    <div id="hobbies">
+    <div class="MainButton">
         <h1><a href="Hobbies.html">Hobbies</a></h1>
     </div>
 
