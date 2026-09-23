@@ -89,6 +89,10 @@ a {
   border-radius: 4px;
 }
 
+.hero-copy {
+  min-width: 0;
+}
+
 .eyebrow {
   margin: 0 0 20px;
   color: #e45b3c;

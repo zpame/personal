@@ -19,7 +19,7 @@
           <a class="primary-link" href="/projects.html">See my projects</a>
         </div>
         <div class="hero-image">
-          <img src="/SeniorPic1.JPEG" alt="Senior picture of Zack" />
+          <img :src="seniorPicture" alt="Senior picture of Zack" />
         </div>
       </section>
 
@@ -64,3 +64,7 @@
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+import seniorPicture from './assets/SeniorPic1.jpeg'
+</script>
