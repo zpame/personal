@@ -33,6 +33,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Convert cubing video for browsers
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -y -i public/CubingVideo.MOV -c:v libx264 -c:a aac -movflags +faststart public/CubingVideo.mp4
+
       - name: Build Vue app
         run: npm run build
 
