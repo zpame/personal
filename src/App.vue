@@ -5,6 +5,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="/projects.html">Projects</a>
         <a href="/Hobbies.html">Hobbies</a>
+        <a href="/Blog.html">Blog</a>
       </nav>
     </header>
 
@@ -54,6 +55,20 @@
           <a href="/Hobbies.html#cubing" class="interest-item"><span>Speedcubing</span></a>
           <a href="/Hobbies.html#basketball" class="interest-item"><span>Basketball</span></a>
           <a href="/Hobbies.html#gaming" class="interest-item"><span>Gaming</span></a>
+        </div>
+      </section>
+
+      <section class="work-section" aria-labelledby="writing-title">
+        <div class="section-heading">
+          <p class="eyebrow">Pizza ratings</p>
+          <h2 id="writing-title">Pizza, one slice at a time.</h2>
+          <a class="text-link" href="/Blog.html">See all pizza ratings</a>
+        </div>
+        <div class="project-list">
+          <a class="project-row" href="/Blog.html">
+            <span class="project-name">Ratings for 8 restaurants</span>
+            <span class="project-type">View Zack's scores</span>
+          </a>
         </div>
       </section>
     </main>
