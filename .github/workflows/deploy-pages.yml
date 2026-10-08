@@ -37,16 +37,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-          ffmpeg -y -i public/CubingVideo.MOV -c:v libx264 -c:a aac -movflags +faststart public/CubingVideo.mp4
+          ffmpeg -y -i public/assets/CubingVideo.MOV -c:v libx264 -c:a aac -movflags +faststart public/assets/CubingVideo.mp4
 
       - name: Build Vue app
         run: npm run build
 
-      - name: Copy legacy pages and assets
-        run: |
-          find . -maxdepth 1 -type f -name '*.html' ! -name 'index.html' -exec cp {} dist/ \;
-          cp style.css script.js dist/
-          rm -f dist/CubingVideo.MOV
+      - name: Remove original cubing video
+        run: rm -f dist/assets/CubingVideo.MOV
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

@@ -9,7 +9,12 @@ export default defineConfig({
       input: [
         'index.html',
         'Blog.html',
-        'pizza-rating-template.html',
+        'blogs/pizza-ratings.html',
+        'pages/projects.html',
+        'pages/Hobbies.html',
+        'pages/BlockRunner.html',
+        'pages/Isolation.html',
+        'pages/MagicClicker.html',
       ],
     },
   },
