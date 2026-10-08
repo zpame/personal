@@ -196,7 +196,8 @@ p {
 }
 
 .image-row img,
-.image-row video {
+.image-row video,
+.image-row iframe {
     display: block;
     min-width: 0;
     scroll-snap-align: start;
@@ -211,8 +212,25 @@ p {
 }
 
 .image-row.video-carousel video {
-    height: 350px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     max-width: 100%;
+    object-fit: cover;
+    padding: 0;
+    border: 2px solid #000000;
+}
+.image-row.video-carousel iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    padding: 0;
+    border: 2px solid #000000;
+}
+
+#basketball .image-row img {
+    object-fit: cover;
+    padding: 0;
+    border: 2px solid #000000;
 }
 
 .project-images {
@@ -287,7 +305,8 @@ p {
     }
 
     .image-row img,
-    .image-row video {
+    .image-row video,
+    .image-row iframe {
         height: 280px;
     }
 }
