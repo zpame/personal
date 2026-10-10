@@ -227,7 +227,7 @@ p {
     border: 2px solid #000000;
 }
 
-#basketball .image-row img {
+.hobby-basketball .image-row img {
     object-fit: cover;
     padding: 0;
     border: 2px solid #000000;

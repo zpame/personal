@@ -215,6 +215,12 @@ p {
     max-width: 100%;
 }
 
+.hobby-basketball .image-row img {
+    object-fit: cover;
+    padding: 0;
+    border: 2px solid #000000;
+}
+
 .project-images {
     width: 100%;
     max-width: 760px;

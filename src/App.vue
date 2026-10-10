@@ -52,9 +52,9 @@
           <h2 id="interests-title">Things I like doing.</h2>
         </div>
         <div class="interest-grid">
-          <a href="/pages/Hobbies.html#cubing" class="interest-item"><span>Speedcubing</span></a>
-          <a href="/pages/Hobbies.html#basketball" class="interest-item"><span>Basketball</span></a>
-          <a href="/pages/Hobbies.html#gaming" class="interest-item"><span>Gaming</span></a>
+          <a href="/pages/Cubing.html" class="interest-item"><span>Speedcubing</span></a>
+          <a href="/pages/Basketball.html" class="interest-item"><span>Basketball</span></a>
+          <a href="/pages/Gaming.html" class="interest-item"><span>Gaming</span></a>
         </div>
       </section>
 
