@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic Clicker Development Log</title>
+    <style>
+        :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #252b2c; background: #fff; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 18px; font-size: 14px; }
+        header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; padding-bottom: 14px; border-bottom: 1px solid #d8dedb; }
+        h1 { margin: 0; font-size: 19px; }
+        .summary { margin: 5px 0 0; color: #606967; }
+        label { display: grid; gap: 5px; color: #454d4a; font-size: 12px; font-weight: 600; }
+        input { width: min(300px, 70vw); min-height: 38px; padding: 8px 10px; border: 1px solid #b9c2bf; border-radius: 3px; font: inherit; }
+        .status { min-height: 20px; margin: 10px 0 6px; color: #606967; font-size: 12px; }
+        .table-wrap { max-height: calc(100vh - 130px); overflow: auto; border: 1px solid #d8dedb; }
+        table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        th, td { padding: 9px 10px; border-bottom: 1px solid #e3e7e5; text-align: left; vertical-align: top; }
+        th { position: sticky; top: 0; z-index: 1; background: #f3f5f4; color: #313937; font-size: 12px; }
+        th:nth-child(1), td:nth-child(1) { width: 21%; }
+        th:nth-child(2), td:nth-child(2) { width: 64%; overflow-wrap: anywhere; }
+        th:nth-child(3), td:nth-child(3) { width: 15%; text-align: right; white-space: nowrap; }
+        tbody tr:nth-child(even) { background: #fafbfa; }
+        tbody tr:last-child td { border-bottom: 0; }
+        @media (max-width: 560px) { body { padding: 12px; } table { min-width: 560px; } .table-wrap { max-height: calc(100vh - 145px); } }
+    </style>
+</head>
+<body>
+    <header>
+        <div><h1>Magic Clicker Development Log</h1><p class="summary">22 entries · 74.0 hours logged</p></div>
+        <label for="log-filter">Search entries<input id="log-filter" type="search" placeholder="Date or keyword"></label>
+    </header>
+    <p class="status" id="result-count" aria-live="polite">Showing 22 entries</p>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Date:</th><th scope="col">Description</th><th scope="col">Hours</th></tr></thead><tbody><tr><td>November 15, 2024</td><td>Set up project, got ideas written down and created a template for the click method using a basic circle and text to display mana. Also integrated playfab into the project, all data (currently just mana) get&#x27;s uploaded into the cloud when the application quits. (Probably adding an autosave feature soon).</td><td>5.0</td></tr><tr><td>November 17, 2024</td><td>Started setting up shop, made a scroll view to put the items in, then started making the prefab for all the other items to be based off of</td><td>2.0</td></tr><tr><td>November 18, 2024</td><td>Started making the shop nicer, changed the whole way the shop works by changing the prefabs to instantiate on the shop opening, also fixed a ton of bugs regarding the mana and when the buttons would be active/inactive also started making the system that gives your online profile the item in your inventory when you buy it. Next going to work on actually making the wands give you extra mana per click also going to make sure you can only buy 1 of each and that you have to own the previous wand before you can buy the next one.</td><td>10.0</td></tr><tr><td>November 19, 2024</td><td>Added new creation shop for mana per second upgrades, made some animations when you click the Mana bottle, added labels for mpc and mps, fixed some light bugs. Still need to make the creation shop functional but I did add the items in there (up to 1 billion mana cost, still need to find a workaround for overflow error)</td><td>5.0</td></tr><tr><td>November 20, 2024</td><td>Created the entire creation/generation shop to generate mana per second, had a LOT LOT LOT of bugs that took forever to fix but it works smoothly. Need to fix a few things like the purchase buttons blinking, but overall very solid day.</td><td>8.0</td></tr><tr><td>January 15, 2025</td><td>We&#x27;re back... added an animation for the number of mana you get to pop up each time you click the bottle. Took me way too long to figure out why the animation wasn&#x27;t working. Turns out the alpha value &quot;255&quot; doesn&#x27;t exist, RGB goes 255 255 255 1..... I didn&#x27;t know that.</td><td>6.0</td></tr><tr><td>January 16, 2025</td><td>Added a lot of new fonts and graphics, cleaned up some of the buttons</td><td>4.0</td></tr><tr><td>January 17, 2025</td><td>Redesigned both shops, currently in process of adding images to all of the wands and making images for all of the other upgrades aswell. Game looks so much cleaner now.</td><td>2.0</td></tr><tr><td>January 29, 2025</td><td>Added a &quot;Frenzy&quot; bar at the top of the screen, it loads up slowly over-time but also each time you click the mana button it charges it up a little more. I am thinking about adding a shop where you can upgrade these types of abilites. (Ex: Upgrade the amount of charge the frenzy bar will add per click or per second.) When the frenzy goes off I plan to have it add different multipliers</td><td>2.0</td></tr><tr><td>February 5, 2025</td><td>Continued working on the Frenzy Bar. Made an animation for the screen that pops up when the Frenzy bar fills up. Then set up the Coroutine that runs while the Frenzy is active. Still need to program the part where the Frenzy actually adds abilities.</td><td>2.0</td></tr><tr><td>February 6, 2025</td><td>Frenzy bar is now functional. I still need a few graphical fixes to make it look nicer, but it actually does it&#x27;s purpose. Picks random numbers to multiply the click or mps by.</td><td>2.0</td></tr><tr><td>February 7, 2025</td><td>Tried to fix the graphical issues with the Frenzy, still having some issues, but I did end up fixing the issues in the shop with panels loading / not loading.</td><td>3.0</td></tr><tr><td>February 8, 2025</td><td>FINALLY I FIXED IT. ITS 3:18 AM BUT I CAN GO TO BED NOW. Fixed the popup text not turning yellow when you got a MPC frenzy. I had a crazy solution but it ending up working. </td><td>2.0</td></tr><tr><td>February 17, 2025</td><td>Started making a boss fight scene that will be triggered when the player gets to certain milestones of mana. A button will popup on the side allowing them to enter the fight, currently working on the actual fights themselves.</td><td>3.0</td></tr><tr><td>April 16, 2025</td><td>We&#x27;re back again. Worked on boss fight scene for a bit. Then reworked my entire data collection sys tem. Using a new data class instead of keeping everything in MonoBehaviour</td><td>3.0</td></tr><tr><td>May 3, 2025</td><td>Starting integrating the new data collection system into the boss fight scene and other parts of the game</td><td>2.0</td></tr><tr><td>May 12, 2025</td><td>Spent a long time fixing a bug with the new system. Boss fight works now! Just have to clean up a few things with the animations and a few related bugs.</td><td>4.0</td></tr><tr><td>May 13, 2025</td><td>Almost ready to release on Testflight to get some alpha testing in. Fixing a few more bugs.</td><td>2.0</td></tr><tr><td>May 14, 2025</td><td>Launched on testflight and working on sending less API calls to playfab because at the moment the server is getting overloaded. Also I am slowing down wand progression and buffing the mana per second items.</td><td>3.0</td></tr><tr><td>May 17, 2025</td><td>Started adding a menu which I am going to add a leaderboard and other things.</td><td>1.0</td></tr><tr><td>May 26, 2025</td><td>Added leaderboard, working on making it look more appealing. Also added a popup for players to enter a username</td><td>2.0</td></tr><tr><td>January 19, 2026</td><td>WE BACK. Started making the text boxes on the instantiated object to display user data.</td><td>1.0</td></tr></tbody></table></div>
+    <script>
+        const filter = document.querySelector("#log-filter");
+        const tableRows = [...document.querySelectorAll("tbody tr")];
+        const resultCount = document.querySelector("#result-count");
+        filter.addEventListener("input", () => {
+            const query = filter.value.trim().toLowerCase();
+            let visible = 0;
+            for (const row of tableRows) {
+                const matches = row.textContent.toLowerCase().includes(query);
+                row.hidden = !matches;
+                if (matches) visible++;
+            }
+            resultCount.textContent = `Showing ${visible} of ${tableRows.length} entries`;
+        });
+    </script>
+</body>
+</html>
