@@ -60,14 +60,14 @@
 
       <section class="work-section" aria-labelledby="writing-title">
         <div class="section-heading">
-          <p class="eyebrow">Pizza ratings</p>
-          <h2 id="writing-title">Pizza places:</h2>
+          <p class="eyebrow">Blogs</p>
+          <h2 id="writing-title">My blog posts.</h2>
           <a class="text-link" href="/Blog.html">See all blogs</a>
         </div>
         <div class="project-list">
           <a class="project-row" href="/blogs/pizza-ratings.html">
             <span class="project-name">Pizza, yum.</span>
-            <span class="project-type">Read Zack's ratings</span>
+            <span class="project-type">Read about Ohio pizza places</span>
           </a>
         </div>
       </section>
