@@ -52,22 +52,22 @@
           <h2 id="interests-title">Things I like doing.</h2>
         </div>
         <div class="interest-grid">
-          <a href="/pages/Hobbies.html#cubing" class="interest-item"><span>Speedcubing</span></a>
-          <a href="/pages/Hobbies.html#basketball" class="interest-item"><span>Basketball</span></a>
-          <a href="/pages/Hobbies.html#gaming" class="interest-item"><span>Gaming</span></a>
+          <a href="/pages/Cubing.html" class="interest-item"><span>Speedcubing</span></a>
+          <a href="/pages/Basketball.html" class="interest-item"><span>Basketball</span></a>
+          <a href="/pages/Gaming.html" class="interest-item"><span>Gaming</span></a>
         </div>
       </section>
 
       <section class="work-section" aria-labelledby="writing-title">
         <div class="section-heading">
-          <p class="eyebrow">Pizza ratings</p>
-          <h2 id="writing-title">Pizza places:</h2>
+          <p class="eyebrow">Blogs</p>
+          <h2 id="writing-title">My blog posts.</h2>
           <a class="text-link" href="/Blog.html">See all blogs</a>
         </div>
         <div class="project-list">
           <a class="project-row" href="/blogs/pizza-ratings.html">
             <span class="project-name">Pizza, yum.</span>
-            <span class="project-type">Read Zack's ratings</span>
+            <span class="project-type">Read about Ohio pizza places</span>
           </a>
         </div>
       </section>
